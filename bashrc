@@ -109,5 +109,5 @@ export LESS_TERMCAP_us=$'\e[38;2;10;247;255m'
 # PATH
 export PATH="$HOME/.local/bin:$PATH"
 
-# Neofetch on open
-neofetch
+# fastfetch on open
+fastfetch
