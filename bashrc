@@ -115,7 +115,7 @@ if command -v tmux &>/dev/null && [ -z "$TMUX" ]; then
     tmux new-session -d -s main
     tmux split-window -h -t main
     tmux split-window -v -t main:1.2
-    tmux send-keys -t main:1.3 'cat ~/.tmux-help.txt' C-m
+    tmux send-keys -t main:1.3 'clear && cat ~/.tmux-help.txt' C-m
     tmux select-pane -t main:1.1
     exec tmux attach -t main
 fi
