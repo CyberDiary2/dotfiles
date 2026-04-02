@@ -112,12 +112,14 @@ export PATH="$HOME/.local/bin:$PATH"
 # Auto-start tmux: attach to 'main' or create it
 if command -v tmux &>/dev/null && [ -z "$TMUX" ]; then
     wmctrl -r :ACTIVE: -b add,maximized_vert,maximized_horz 2>/dev/null
-    tmux new-session -d -s main
-    tmux split-window -h -t main
-    tmux send-keys -t main:1.2 'clear' C-m
-    tmux split-window -v -t main:1.2
-    tmux send-keys -t main:1.3 'clear && cat ~/.tmux-help.txt' C-m
-    tmux select-pane -t main:1.1
+    if ! tmux has-session -t main 2>/dev/null; then
+        tmux new-session -d -s main
+        tmux split-window -h -t main
+        tmux send-keys -t main:1.2 'clear' C-m
+        tmux split-window -v -t main:1.2
+        tmux send-keys -t main:1.3 'clear && cat ~/.tmux-help.txt' C-m
+        tmux select-pane -t main:1.1
+    fi
     exec tmux attach -t main
 fi
 
