@@ -6,7 +6,7 @@
     <value type="int" value="1"/>
     <property name="dark-mode" type="bool" value="true"/>
     <property name="panel-1" type="empty">
-      <property name="position" type="string" value="p=8;x=640;y=786"/>
+      <property name="position" type="string" value="p=6;x=0;y=0"/>
       <property name="length" type="uint" value="100"/>
       <property name="position-locked" type="bool" value="true"/>
       <property name="icon-size" type="uint" value="16"/>
@@ -24,7 +24,10 @@
         <value type="int" value="9"/>
         <value type="int" value="10"/>
         <value type="int" value="14"/>
+        <value type="int" value="15"/>
+        <value type="int" value="16"/>
       </property>
+      <property name="background-alpha" type="int" value="85"/>
     </property>
   </property>
   <property name="plugins" type="empty">
@@ -70,5 +73,7 @@
       </property>
     </property>
     <property name="plugin-14" type="string" value="power-manager-plugin"/>
+    <property name="plugin-15" type="string" value="weather"/>
+    <property name="plugin-16" type="string" value="systemload"/>
   </property>
 </channel>
