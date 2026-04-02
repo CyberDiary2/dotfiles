@@ -1,0 +1,27 @@
+
+  TMUX KEYBINDINGS          prefix = Ctrl+A
+  ─────────────────────────────────────────
+
+  PANES
+    prefix + |       Split horizontal
+    prefix + _       Split vertical
+    prefix + x       Kill pane
+
+  WINDOWS
+    prefix + c       New window
+    prefix + n       Next window
+    prefix + p       Previous window
+    prefix + ,       Rename window
+
+  SESSIONS
+    prefix + d       Detach
+    prefix + s       List sessions
+    prefix + $       Rename session
+
+  MISC
+    prefix + r       Reload config
+    prefix + ?       List all bindings
+    prefix + [       Scroll mode (q to exit)
+
+  MOUSE             Enabled (click, scroll, resize)
+
